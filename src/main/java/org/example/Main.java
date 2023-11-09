@@ -4,6 +4,8 @@ public class Main {
     public static void main(String[] args) {
         Playable musicPlayer = new MusicPlayer();
         Playable videoPlayer = new VideoPlayer();
+        MusicPlayer musicPlayer1 = new MusicPlayer();
+        VideoPlayer videoPlayer1 = new VideoPlayer();
 
         MediaController mediaController = new MediaController();
 
@@ -14,5 +16,6 @@ public class Main {
         /* musicPlayer.music(); Gibt Fehler da MusicPlayer vom Typ Playable ist und die Methode music nicht im
         * Interface Playable definiert ist.
         */
+        musicPlayer1.music(); // Funktioniert da vom Typ MusicPlayer
     }
 }
