@@ -2,6 +2,14 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        MusicPlayer musicPlayer = new MusicPlayer();
+        VideoPlayer videoPlayer = new VideoPlayer();
+
+        MediaController mediaController = new MediaController();
+
+        mediaController.playMedia(musicPlayer);
+        mediaController.playMedia(videoPlayer);
+        musicPlayer.play();
+        videoPlayer.play();
     }
 }
